@@ -22,7 +22,6 @@
 .subTitle{
 	padding-bottom: 8px;
   border-bottom: 1px solid $black;
-	font-weight: 500;
 	h2{
 		@include fontSize(32px , 43px);
 		display: flex;
@@ -33,6 +32,22 @@
 		@include fontSize(24px , 32px);
 		color: $secondary;
 		margin-left: 16px;
+		font-weight: 500;
+	}
+}
+.subTitle-white{
+  border-bottom: 1px solid $white;
+	margin-bottom: 37px;
+	h2{
+		justify-content: center
+	}
+	span{
+		color: $white;
+	}
+}
+.content{
+	li{
+		@include fontSize(24px , 36px);
 	}
 }
 /*-------------------------*/
@@ -45,7 +60,6 @@
 		border-bottom: 2px solid $black;
 		h1{
 			@include fontSize(60px , 106px);
-			font-weight: 500;
 			text-align: center;
 			@media screen and (min-width:1024px){
 				&{
@@ -63,10 +77,31 @@
 	}
 }
 /*-------------------------*/
-/* profile
+/* skill
 ---------------------------*/
-
-
+.skill{
+	padding: 24px 0 36px 0;
+	background-color: $primary;
+	color: $white;
+	text-align: center;
+	.container{
+		max-width: 996px;
+	}
+	.content-outer{
+		display:flex;
+		justify-content: center;
+	}
+	.content{
+		@include center;
+		text-align: left;
+		padding-left: 24px;
+		border-left: 1px solid $thirty;
+		font-weight: 300;
+	}
+}
+/*-------------------------*/
+/* experience
+---------------------------*/
 
 
 
@@ -108,3 +143,7 @@
 .mb-5{
 	margin-bottom: 40px;
 }
+.mb-9{
+	margin-bottom: 72px;
+}
+
