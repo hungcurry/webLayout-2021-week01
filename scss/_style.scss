@@ -1,6 +1,6 @@
 
 * {
-	outline: 1px solid red;
+	// outline: 1px solid red;
 }
 .container{
 	@include center;
@@ -39,7 +39,7 @@
   border-bottom: 1px solid $white;
 	margin-bottom: 37px;
 	h2{
-		justify-content: center
+		justify-content: center;
 	}
 	span{
 		color: $white;
@@ -49,6 +49,17 @@
 	li{
 		@include fontSize(24px , 36px);
 	}
+}
+.patton{
+	@include width(90px , 90px);
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.skill,.footer{
+	padding: 24px 0 36px 0;
+	background-color: $primary;
+	color: $white;
+	text-align: center;
 }
 /*-------------------------*/
 /* header
@@ -70,20 +81,20 @@
 		}
 	}
 	.imgBox{
-		@include width(324px , 324px);
 		margin: 48px 0;
 		overflow: hidden;
 		border-radius: 50%;
+		@media screen and (min-width:768px){
+			&{
+				@include width(324px , 324px);
+			}
+		}
 	}
 }
 /*-------------------------*/
 /* skill
 ---------------------------*/
 .skill{
-	padding: 24px 0 36px 0;
-	background-color: $primary;
-	color: $white;
-	text-align: center;
 	.container{
 		max-width: 996px;
 	}
@@ -102,14 +113,53 @@
 /*-------------------------*/
 /* experience
 ---------------------------*/
-
-
-
-
-
-
-
-
+.experience{
+	.content-outer{
+		@include center;
+		max-width: 1160px;
+		display:flex;
+		justify-content: center;
+	}
+	.content{
+		@include center;
+		width: 100%;
+		text-align: left;
+		padding-left: 24px;
+		border-left: 1px solid $thirty;
+		font-weight: 400;
+		p{
+			@include fontSize(20px , 30px);
+		}
+	}
+	li:first-child{
+		p{
+			max-width: 642px;
+			padding: 2px 0;
+		}
+	}
+}
+/*-------------------------*/
+/* footer
+---------------------------*/
+.footer{
+	.subTitle-white{
+		margin-bottom: 32px;
+	}
+	.content{
+		font-weight: 300;
+	}
+	a{
+		color: $white;
+		word-break: break-all;
+	}
+	.icon-group{
+		display: flex;
+		justify-content: center;
+	}
+	.icon-group li + li{
+		margin-left: 24px;
+	}
+}
 /*-------------------------*/
 /* utilities
 ---------------------------*/
@@ -125,9 +175,6 @@
 .mt-4{
 	margin-top: 32px;
 }
-.mt-5{
-	margin-top: 40px;
-}
 .mb-1{
 	margin-bottom: 8px;
 }
@@ -139,9 +186,6 @@
 }
 .mb-4{
 	margin-bottom: 32px;
-}
-.mb-5{
-	margin-bottom: 40px;
 }
 .mb-9{
 	margin-bottom: 72px;

@@ -80,8 +80,8 @@ ul, li {
   list-style: none;
 }
 
-* {
-  outline: 1px solid red;
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -143,6 +143,20 @@ ul, li {
   line-height: 36px;
 }
 
+.patton {
+  width: 90px;
+  height: 90px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.skill, .footer {
+  padding: 24px 0 36px 0;
+  background-color: #415165;
+  color: #fff;
+  text-align: center;
+}
+
 /*-------------------------*/
 /* header
 ---------------------------*/
@@ -166,23 +180,21 @@ ul, li {
 }
 
 .header .imgBox {
-  width: 324px;
-  height: 324px;
   margin: 48px 0;
   overflow: hidden;
   border-radius: 50%;
 }
 
+@media screen and (min-width: 768px) {
+  .header .imgBox {
+    width: 324px;
+    height: 324px;
+  }
+}
+
 /*-------------------------*/
 /* skill
 ---------------------------*/
-.skill {
-  padding: 24px 0 36px 0;
-  background-color: #415165;
-  color: #fff;
-  text-align: center;
-}
-
 .skill .container {
   max-width: 996px;
 }
@@ -203,6 +215,57 @@ ul, li {
 /*-------------------------*/
 /* experience
 ---------------------------*/
+.experience .content-outer {
+  margin: 0 auto;
+  max-width: 1160px;
+  display: flex;
+  justify-content: center;
+}
+
+.experience .content {
+  margin: 0 auto;
+  width: 100%;
+  text-align: left;
+  padding-left: 24px;
+  border-left: 1px solid #96a9c4;
+  font-weight: 400;
+}
+
+.experience .content p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.experience li:first-child p {
+  max-width: 642px;
+  padding: 2px 0;
+}
+
+/*-------------------------*/
+/* footer
+---------------------------*/
+.footer .subTitle-white {
+  margin-bottom: 32px;
+}
+
+.footer .content {
+  font-weight: 300;
+}
+
+.footer a {
+  color: #fff;
+  word-break: break-all;
+}
+
+.footer .icon-group {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .icon-group li + li {
+  margin-left: 24px;
+}
+
 /*-------------------------*/
 /* utilities
 ---------------------------*/
@@ -222,10 +285,6 @@ ul, li {
   margin-top: 32px;
 }
 
-.mt-5 {
-  margin-top: 40px;
-}
-
 .mb-1 {
   margin-bottom: 8px;
 }
@@ -240,10 +299,6 @@ ul, li {
 
 .mb-4 {
   margin-bottom: 32px;
-}
-
-.mb-5 {
-  margin-bottom: 40px;
 }
 
 .mb-9 {
