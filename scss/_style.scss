@@ -55,7 +55,7 @@
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
-.skill,.footer{
+%box {
 	padding: 24px 0 36px 0;
 	background-color: $primary;
 	color: $white;
@@ -95,6 +95,7 @@
 /* skill
 ---------------------------*/
 .skill{
+	@extend %box;
 	.container{
 		max-width: 996px;
 	}
@@ -116,7 +117,7 @@
 .experience{
 	.content-outer{
 		@include center;
-		max-width: 1160px;
+		max-width: 1150px;
 		display:flex;
 		justify-content: center;
 	}
@@ -142,6 +143,7 @@
 /* footer
 ---------------------------*/
 .footer{
+	@extend %box;
 	.subTitle-white{
 		margin-bottom: 32px;
 	}
