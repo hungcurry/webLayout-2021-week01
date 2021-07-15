@@ -105,16 +105,13 @@ a {
 /* module
 ---------------------------*/
 .subTitle {
-  padding-bottom: 8px;
-  border-bottom: 1px solid #000;
-}
-
-.subTitle h2 {
   font-size: 32px;
   line-height: 43px;
+  border-bottom: 1px solid #000;
   display: flex;
   align-items: center;
-  padding: 1px 0;
+  padding-top: 1px;
+  padding-bottom: 8px;
 }
 
 .subTitle span {
@@ -128,9 +125,6 @@ a {
 .subTitle-white {
   border-bottom: 1px solid #fff;
   margin-bottom: 37px;
-}
-
-.subTitle-white h2 {
   justify-content: center;
 }
 

@@ -20,14 +20,12 @@
 /* module
 ---------------------------*/
 .subTitle{
-	padding-bottom: 8px;
+	@include fontSize(32px , 43px);
   border-bottom: 1px solid $black;
-	h2{
-		@include fontSize(32px , 43px);
-		display: flex;
-		align-items: center;
-		padding: 1px 0;
-	}
+	display: flex;
+	align-items: center;
+	padding-top: 1px;
+	padding-bottom: 8px;
 	span{
 		@include fontSize(24px , 32px);
 		color: $secondary;
@@ -38,9 +36,7 @@
 .subTitle-white{
   border-bottom: 1px solid $white;
 	margin-bottom: 37px;
-	h2{
-		justify-content: center;
-	}
+	justify-content: center;
 	span{
 		color: $white;
 	}
